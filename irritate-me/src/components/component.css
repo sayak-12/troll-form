@@ -1,0 +1,80 @@
+
+.roll, .space, .erase{
+    padding: 7px 20px;
+    background-color: seagreen;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: max-content;
+    color: white;
+    user-select: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .roll{
+    width: 100%;
+  }
+  .namediv,.passdiv{
+    width: 100%;
+    height:15rem;
+    background-color: rgb(220, 220, 220);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .ins{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .btngroup{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .value{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 50px;
+font-weight: bolder;
+color: blueviolet;
+  }
+  .group{
+    display: flex;
+    justify-content: space-between;
+  }
+  .namediv input, .passdiv input{
+    padding: 6px 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    text-transform: uppercase;
+    background: rgb(239, 239, 239);
+  }
+  .passdiv{
+    height: max-content;
+  }
+  #slider{
+    width: 100%;
+  }
+  .error{
+    padding: 3px;
+    background-color: rgb(255, 42, 42);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .success{
+    padding: 3px;
+    background-color: greenyellow;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
