@@ -49,7 +49,7 @@ const PasswordComponent = () => {
   };
   return (
     <div className="passdiv">
-      <input type="text" name="" id="" onChange={passwordcheck} />
+      <input type="text" name="" id="password" onChange={passwordcheck} />
       <br />
       {lengtherror && <span className="error">{lengtherror}</span>}
       {success && <span className="success">{success}</span>}

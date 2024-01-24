@@ -57,6 +57,9 @@ color: blueviolet;
     text-transform: uppercase;
     background: rgb(239, 239, 239);
   }
+  .passdiv input{
+    text-transform: none;
+  }
   .passdiv{
     height: max-content;
   }
