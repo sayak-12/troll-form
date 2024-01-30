@@ -8,8 +8,10 @@ import axios from "axios";
 
 function App() {
   const [err, setErr] = useState(null)
+  const [success, setSuccess] = useState(null)
   const submithandler = (e)=>{
     e.preventDefault();
+    setSuccess(null)
     var name = document.querySelector('.nameip').value;
     var password = document.getElementById('password').value;
     var mobile = document.getElementById('slider').value;
@@ -19,9 +21,11 @@ function App() {
     }
     else{
       setErr(null);
+      alert("I'm Sorry, the form data was lost. You have to fill it up again");
       console.log(name, password, mobile, email);
       axios.post("http://localhost:3000/submit", {name, password, mobile, email}).then((data)=>{
         console.log(data.data);
+        setSuccess("I was kidding, the form has been successfully filled!")
       })
       .catch((err)=>{
         console.log(err);
@@ -53,6 +57,7 @@ function App() {
         <EmailComponent/>
         <button type="submit">Submit Data</button>
         {err && <div className="error">{err}</div>}
+        {success && <div className="success">{success}</div>}
       </form>
     </>
   );
